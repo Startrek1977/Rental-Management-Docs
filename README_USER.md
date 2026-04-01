@@ -108,36 +108,6 @@ Here's what the application looks like as you navigate through it:
 
 When you open the app, you'll see the **Dashboard** — your command center with a quick overview of your entire operation.
 
-**Dashboard Layout:**
-
-```
-┌─────────────────────────────────────────────────────────┐
-│           DASHBOARD                                     │
-├─────────────────────────────────────────────────────────┤
-│                                                         │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌─────────┐│
-│  │ Branches │  │ Contracts│  │  Monthly │  │Renewals ││
-│  │    3     │  │    3     │  │  Rent    │  │   0     ││
-│  │          │  │          │  │ 96,250   │  │         ││
-│  └──────────┘  └──────────┘  └──────────┘  └─────────┘│
-│                                                         │
-│  Upcoming Payments (Next 5)                            │
-│  ┌─────────────────────────────────────────────────────┐│
-│  │ Contract │ Branch        │ Amount  │ Due Date │ Days││
-│  ├─────────────────────────────────────────────────────┤│
-│  │ BR-001   │ Downtown Dubai│ 25,000  │ 31/03/26 │ 1  ││
-│  │ BR-002   │ Abu Dhabi     │ 18,750  │ 15/04/26 │ 16 ││
-│  └─────────────────────────────────────────────────────┘│
-│                                                         │
-│  Recent Activities (Last 10 actions)                   │
-│  Recent document uploads, contract renewals, etc.      │
-│                                                         │
-│  Expiring Contracts (Next 60 days)                     │
-│  Contracts ending soon that need renewal               │
-│                                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
 **What You See:**
 
 1. **Summary Cards** (Top Row)
@@ -165,21 +135,6 @@ Branches represent your office locations across the UAE.
 1. Click **"Branches"** in the sidebar
 2. You'll see a list of all your branch locations
 3. Search by name or filter by emirate (Dubai, Abu Dhabi, Sharjah, etc.)
-
-**Branch List View:**
-```
-┌──────────────────────────────────────────────────┐
-│ Branches                                         │
-├──────────────────────────────────────────────────┤
-│ Search: ___________  Emirate: [Select]  [+ Add]  │
-├──────────────────────────────────────────────────┤
-│ Name                   │ Emirate      │ Area     │
-├──────────────────────────────────────────────────┤
-│ Downtown Dubai Complex │ Dubai        │ Downtown │
-│ Abu Dhabi City Center  │ Abu Dhabi    │ City     │
-│ Sharjah Business Park  │ Sharjah      │ Business │
-└──────────────────────────────────────────────────┘
-```
 
 ### Adding a New Branch
 
@@ -236,21 +191,6 @@ Contracts are your rental agreements with specific terms and payment schedules.
 2. See all contracts with their status (Active, Renewed, Cancelled)
 3. Filter by status or branch location
 
-**Contracts List:**
-```
-┌─────────────────────────────────────────────────────┐
-│ Contracts                                           │
-├─────────────────────────────────────────────────────┤
-│ Filter: [All Statuses ▼]  Branch: [All ▼]           │
-├─────────────────────────────────────────────────────┤
-│ Number  │ Branch          │ Rent     │ Status      │
-├─────────────────────────────────────────────────────┤
-│ BR-001  │ Downtown Dubai  │ 300,000  │ Active      │
-│ BR-002  │ Abu Dhabi       │ 225,000  │ Active      │
-│ BR-003  │ Sharjah         │ 168,000  │ Active      │
-└─────────────────────────────────────────────────────┘
-```
-
 ### Creating a New Contract
 
 1. Click **"+ Create Contract"**
@@ -281,21 +221,7 @@ When you create a contract, the system automatically calculates all payment date
 ### Viewing Contract Details
 
 1. Double-click a contract in the list
-2. See the full payment schedule:
-
-```
-┌──────────────────────────────────────────┐
-│ Payment Schedule                         │
-├──────────────────────────────────────────┤
-│ # │ Amount   │ Due Date   │ Status      │
-├──────────────────────────────────────────┤
-│ 1 │ 25,000   │ 15/04/2026 │ Not Paid    │
-│ 2 │ 25,000   │ 15/05/2026 │ Not Paid    │
-│ 3 │ 25,000   │ 15/06/2026 │ Not Paid    │
-│...│ ...      │ ...        │ ...         │
-│12 │ 25,000   │ 15/03/2027 │ Not Paid    │
-└──────────────────────────────────────────┘
-```
+2. See the full payment schedule
 
 ### Renewing a Contract
 
@@ -376,21 +302,7 @@ Store important contract documents, licenses, and agreements.
 
 ### Viewing Documents
 
-Documents are organized by branch and contract:
-
-```
-┌────────────────────────────────────┐
-│ Documents                          │
-├────────────────────────────────────┤
-│ Category: [All ▼]  Search: _____   │
-├────────────────────────────────────┤
-│ File Name          │ Category    │
-├────────────────────────────────────┤
-│ BR-001 Contract    │ Lease Agr.  │ [Open]
-│ License BR-001     │ License     │ [Open]
-│ Rent Receipt       │ Receipt     │ [Open]
-└────────────────────────────────────┘
-```
+Documents are organized by branch and contract.
 
 ### Opening a Document
 
@@ -413,21 +325,7 @@ All system actions are automatically logged for compliance and audit purposes.
 
 ### Activity Log Features
 
-Click **"Activity Log"** in sidebar to see:
-
-```
-┌──────────────────────────────────────────────────────┐
-│ Activity Log                                         │
-├──────────────────────────────────────────────────────┤
-│ Filter: [All Actions ▼]  Date Range: [From][To]     │
-├──────────────────────────────────────────────────────┤
-│ Timestamp          │ Action            │ Description │
-├──────────────────────────────────────────────────────┤
-│ 15/03/2026 10:30   │ Contract Renewal  │ BR-001...   │
-│ 14/03/2026 14:15   │ Payment Received  │ 25,000 AED  │
-│ 13/03/2026 09:45   │ Doc Upload        │ License... │
-└──────────────────────────────────────────────────────┘
-```
+Click **"Activity Log"** in sidebar to see a timestamped list of all actions with filtering by action type and date range.
 
 **What Gets Logged:**
 - ✓ Contract creation, renewal, cancellation
@@ -458,19 +356,6 @@ The system automatically alerts you about important events.
 1. Click **"Notifications"** in sidebar
 2. See all unread alerts with counts
 3. Click notification to jump to related contract/branch
-
-**Notification Center:**
-```
-┌──────────────────────────────────────┐
-│ Notifications                        │
-├──────────────────────────────────────┤
-│ Unread: 3                            │
-├──────────────────────────────────────┤
-│ 🔄 BR-001 renewal due (60 days)     │
-│ 💰 Payment due 31/03/2026            │
-│ ⚠️ License expires 15/04/2026        │
-└──────────────────────────────────────┘
-```
 
 ### Marking as Read
 
@@ -570,17 +455,6 @@ Generate detailed analytics and export to Excel for further analysis.
 - ✓ Totals and calculations
 
 ### Example Reports
-
-**Rental Cost Summary (Monthly):**
-```
-Branch              │ Monthly Rent  │ Annual Total
-────────────────────┼───────────────┼─────────────
-Downtown Dubai      │ 25,000        │ 300,000
-Abu Dhabi City      │ 18,750        │ 225,000
-Sharjah Business    │ 14,000        │ 168,000
-────────────────────┼───────────────┼─────────────
-TOTAL               │ 57,750        │ 693,000
-```
 
 ---
 
