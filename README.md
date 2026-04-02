@@ -2,6 +2,8 @@
 
 Welcome to the Rental Management System! This guide will help you use the application to manage your rental properties, contracts, and payments across multiple branches.
 
+<!-- Workflow test: Verifying sync-docs workflow with explicit paths filter -->
+
 ## 📋 Table of Contents
 
 - [What is This App?](#what-is-this-app)
@@ -538,6 +540,6 @@ You now know how to:
 
 For questions about specific features, refer to the relevant section above. The system is designed to be intuitive, but don't hesitate to explore and ask for help when needed!
 
----
+-----
 
 **Enjoy managing your rental operations efficiently! 🎉**
