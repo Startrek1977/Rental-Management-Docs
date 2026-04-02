@@ -95,7 +95,7 @@ Immediate value. No learning curve.
 ✅ Review activity log weekly
 ✅ Export reports monthly
 
-----
+-----
 
 ## 🎯 Bottom Line
 
