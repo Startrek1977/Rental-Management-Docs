@@ -88,7 +88,12 @@ Immediate value. No learning curve.
 
 ## 🏆 Best Practices
 
-✅ Create contracts immediately | ✅ Upload documents promptly | ✅ Record payments same day | ✅ Check dashboard daily | ✅ Review activity log weekly | ✅ Export reports monthly
+✅ Create contracts immediately
+✅ Upload documents promptly
+✅ Record payments same day
+✅ Check dashboard daily
+✅ Review activity log weekly
+✅ Export reports monthly
 
 ----
 
